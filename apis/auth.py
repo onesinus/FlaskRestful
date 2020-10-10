@@ -1,7 +1,7 @@
 import functools
 
 from flask import (
-    Blueprint, flash, g, redirect, render_template, session, url_for, request
+    Blueprint, g, session, request
 )
 
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -101,5 +101,7 @@ def login_required(view):
                 'success': False,
                 "error": "You are not authorized to access this endpoint"
             },401)
-            
-        return wrapped_view
+
+        return view(**kwargs)            
+        
+    return wrapped_view
