@@ -1,1 +1,1 @@
-web: gunicorn apis:FlaskRestful
+web: gunicorn apis
