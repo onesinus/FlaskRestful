@@ -12,7 +12,6 @@ pluggy==0.13.1
 py==1.9.0
 pyparsing==2.4.7
 pytest==6.1.1
--e git+https://github.com/onesinus/FlaskRestful.git@d20be98f5727fea0e64f0df0ca63ddf92808aea8#egg=Simple_Restful_API
 six==1.15.0
 toml==0.10.1
 Werkzeug==1.0.1
