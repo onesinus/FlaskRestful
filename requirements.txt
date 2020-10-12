@@ -7,7 +7,7 @@ cached-property==1.5.1
 certifi==2020.4.5.1
 cffi==1.14.0
 chardet==3.0.4
-cliapp==1.20170827
+cliapp==1.0.2
 cmdtest==0.32
 configparser==4.0.2
 contextlib2==0.6.0.post1
