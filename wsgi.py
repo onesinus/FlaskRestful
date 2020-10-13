@@ -1,6 +1,6 @@
 from apis import create_app
-from apis.db import init_db
+from apis.db import init_app
 
-init_db()
+init_app()
 
 app = create_app()
