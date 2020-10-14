@@ -1,4 +1,4 @@
-from .db import init_app
+from .db import init_app, init_db
 
 import os
 
@@ -27,10 +27,12 @@ def hello():
     }
 
 from . import db
-db.init_app(app);
+# init_db();
 
 from . import auth
 from . import blog
 
 app.register_blueprint(auth.bp)
 app.register_blueprint(blog.bp)
+
+db.init_app(app);
