@@ -1,4 +1,4 @@
-from .app import app
+from .db import init_app
 
 import os
 
@@ -37,3 +37,8 @@ def create_app(test_config = None):
     app.register_blueprint(blog.bp)
 
     return app
+
+if __name__ == '__main__':
+    app = create_app()
+    init_app(app)
+    app.run()
