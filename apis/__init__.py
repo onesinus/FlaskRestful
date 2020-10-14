@@ -4,7 +4,7 @@ import os
 
 from flask import Flask, g
 
-def create_app(test_config = None):
+def app(test_config = None):
     app = Flask(__name__, instance_relative_config = True)
     app.config.from_mapping(
         SECRET_KEY='dev',
@@ -38,7 +38,7 @@ def create_app(test_config = None):
 
     return app
 
-if __name__ == '__main__':
-    app = create_app()
-    init_app(app)
-    app.run()
+# if __name__ == '__main__':
+#     app = create_app()
+#     init_app(app)
+#     app.run()
