@@ -35,4 +35,8 @@ from . import blog
 app.register_blueprint(auth.bp)
 app.register_blueprint(blog.bp)
 
+with app.app_context():
+    init_db()
+    
 db.init_app(app);
+
